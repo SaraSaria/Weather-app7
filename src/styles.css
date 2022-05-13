@@ -1,0 +1,42 @@
+body {
+  font-family: "Merriweather", serif;
+  background: #fafafa;
+}
+h1 {
+  font-weight: 800;
+}
+h2 {
+  font-size: 20px;
+  font-weight: 500;
+}
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 28px;
+  font-weight: 500;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+
+.weather-app {
+  background: #fff;
+  border: 1px solid #fafafa;
+  padding: 15px;
+  margin: 0 auto;
+  margin-top: 20px;
+  max-width: 600px;
+  border-radius: 10px;
+}
+
+p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: dimgray;
+  text-align: center;
+}
