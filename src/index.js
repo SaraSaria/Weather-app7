@@ -24,6 +24,14 @@ if (minute < 10) {
 let h2 = document.querySelector("h2");
 h2.innerHTML = `${day} ${hour}:${minute}`;
 
+function formatDay(timestamp) {
+  let date = new Date(timestamp * 1000);
+  let day = date.getDay();
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+  return days[day];
+}
+
 function displayWeather(response) {
   console.log(response);
   document.querySelector("#city").innerHTML = response.data.name;
@@ -37,6 +45,16 @@ function displayWeather(response) {
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#description").innerHTML =
     response.data.weather[0].main;
+
+  document
+    .querySelector("#icon")
+    .setAttribute(
+      "src",
+      `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+    );
+  document
+    .querySelector("#icon")
+    .setAttribute("alt", response.data.weather[0].description);
 }
 function searchLocation(position) {
   let apiKey = "02b4660409b775551d2476caecada88b";
