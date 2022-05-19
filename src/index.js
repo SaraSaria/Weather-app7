@@ -24,6 +24,38 @@ if (minute < 10) {
 let h2 = document.querySelector("h2");
 h2.innerHTML = `${day} ${hour}:${minute}`;
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let forecastHTML = `<div class="row">`;
+  let days = ["Thu", "Fri", "Sat", "Sun"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+  
+            <div class="col-2">
+              <div class="weather-forecast-date">${day}</div>
+              <br />
+              <img
+                src="http://openweathermap.org/img/wn/01n@2x.png"
+                alt=""
+                width="42"
+              />
+              <div class="weather-forecast-temperature">
+                <span class="weather-forecast-temperature-max">18º</span>
+                <span class="weather-forecast-temperature-min">12º</span>
+              </div>
+            </div>
+          
+  `;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+
+  forecastElement.innerHTML = forecastHTML;
+}
+
 function formatDay(timestamp) {
   let date = new Date(timestamp * 1000);
   let day = date.getDay();
@@ -114,3 +146,4 @@ currentLocationButton.addEventListener("click", getCurrentLocation);
 let celsiusTemperature = null;
 
 search("New York");
+displayForecast();
