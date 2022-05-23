@@ -104,6 +104,9 @@ function displayWeather(response) {
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#description").innerHTML =
     response.data.weather[0].main;
+  document.querySelector("#feels-like").innerHTML = Math.round(
+    response.data.main.feels_like
+  );
 
   document
     .querySelector("#icon")

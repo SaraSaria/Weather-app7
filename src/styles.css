@@ -1,7 +1,14 @@
 body {
   font-family: "Merriweather", serif;
 
-  background: #cadefc;
+  background: radial-gradient(
+    328px at 2.9% 15%,
+    rgb(191, 224, 251) 0%,
+    rgb(232, 233, 251) 25.8%,
+    rgb(252, 239, 250) 50.8%,
+    rgb(234, 251, 251) 77.6%,
+    rgb(240, 251, 244) 100.7%
+  );
 }
 h1 {
   font-weight: 800;
@@ -29,13 +36,21 @@ li {
 }
 
 .weather-app {
-  background: #d5eeff;
+  background: radial-gradient(
+    328px at 2.9% 15%,
+    rgb(191, 224, 251) 0%,
+    rgb(232, 233, 251) 25.8%,
+    rgb(252, 239, 250) 50.8%,
+    rgb(234, 251, 251) 77.6%,
+    rgb(240, 251, 244) 100.7%
+  );
   border: 1px solid black;
   padding: 15px;
   margin: 0 auto;
   margin-top: 20px;
   max-width: 600px;
   border-radius: 10px;
+  box-shadow: 5px 3px 3px #152744;
 }
 
 .weather-temperature .units {
@@ -77,10 +92,6 @@ li {
   background: #cadefc;
 
   color: black;
-}
-
-.weather-conditions {
-  font-size: 16px;
 }
 
 p {
