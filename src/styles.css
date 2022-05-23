@@ -52,6 +52,15 @@ li {
   border-radius: 10px;
   box-shadow: 5px 3px 3px #152744;
 }
+.conditions-box {
+  border: 1px solid black;
+  padding: 15px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-right: 10px;
+  max-width: 600px;
+  border-radius: 10px;
+}
 
 .weather-temperature .units {
   position: relative;
@@ -72,6 +81,13 @@ li {
 .weather-forecast {
   margin-top: 20px;
   text-align: center;
+  border: 1px solid black;
+  padding: 15px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-right: 10px;
+  max-width: 600px;
+  border-radius: 10px;
 }
 .weather-forecast-date {
   font-size: 18px;
